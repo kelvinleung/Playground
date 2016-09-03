@@ -23,8 +23,9 @@ var Sort = function () {
   function Sort(arr) {
     _classCallCheck(this, Sort);
 
-    console.log("here comes the arr:", arr);
-    this.arr = arr.slice(0); //bug fixed!!!
+    //slice(): copy array data
+    //copy: copy only the reference
+    this.arr = arr.slice(0);
     this.length = arr.length;
   }
 
@@ -54,7 +55,6 @@ var Bubble = function (_Sort) {
   function Bubble(arr) {
     _classCallCheck(this, Bubble);
 
-    console.log("bubble begin:", arr);
     return _possibleConstructorReturn(this, (Bubble.__proto__ || Object.getPrototypeOf(Bubble)).call(this, arr));
   }
 
@@ -83,7 +83,6 @@ var Selection = function (_Sort2) {
   function Selection(arr) {
     _classCallCheck(this, Selection);
 
-    console.log("selection begin:", arr);
     return _possibleConstructorReturn(this, (Selection.__proto__ || Object.getPrototypeOf(Selection)).call(this, arr));
   }
 

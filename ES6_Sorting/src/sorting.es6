@@ -11,8 +11,9 @@ const TEST_DATA = [13, 3, 9, 55, 213, 34, 8, 1];
 //Super Sort
 class Sort {
   constructor(arr) {
-    console.log("here comes the arr:", arr);
-    this.arr = arr.slice(0); //bug fixed!!!
+    //slice(): copy array data
+    //copy: copy only the reference
+    this.arr = arr.slice(0);
     this.length = arr.length;
   }
   swap(a, b) {
@@ -28,7 +29,6 @@ class Sort {
 //Bubble Sort
 class Bubble extends Sort {
   constructor(arr) {
-    console.log("bubble begin:", arr);
     super(arr);
   }
   sort() {
@@ -45,7 +45,6 @@ class Bubble extends Sort {
 //Selection Sort
 class Selection extends Sort {
   constructor(arr) {
-    console.log("selection begin:", arr);
     super(arr);
   }
   sort() {
